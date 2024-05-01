@@ -9,14 +9,14 @@ with open(os.path.dirname(__file__) + '/../settings.yml', encoding="utf8") as fi
     settings = yaml.load(file, Loader=yaml.FullLoader)
 
 
-web = Flask(__name__)
+app = Flask(__name__)
 
-@web.route('/')
+@app.route('/')
 def root():
     return redirect("https://github.com/thomaskeig/thekla-api", code=302)
 
 
-@web.route('/remainingTickets', methods=['GET'])
+@app.route('/remainingTickets', methods=['GET'])
 async def remainingTickets():
     event_index = request.args.get('event_index', default='0')
     date = request.args.get('date', default='2024-05-04')
