@@ -4,11 +4,6 @@ import requests
 import yaml
 import os
 
-
-with open(os.path.dirname(__file__) + '/../settings.yml', encoding="utf8") as file:
-    settings = yaml.load(file, Loader=yaml.FullLoader)
-
-
 app = Flask(__name__)
 
 @app.route('/')
