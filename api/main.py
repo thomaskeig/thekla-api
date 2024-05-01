@@ -41,6 +41,6 @@ def remainingTickets():
         tickets_available = 0
 
     # Create JSON object
-    json_str = {"event": event.replace('-bristol-tickets', ''), "date": date, "sold_out": (tickets_available==0), "tickets_remaining": tickets_available, "exact_amount_unknown": (tickets_available==10)}
+    json_str = {"event": event.replace('-bristol-tickets', ''), "date": date, "tickets_remaining": tickets_available}
 
     return json_str, 200
