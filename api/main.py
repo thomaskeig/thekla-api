@@ -13,7 +13,7 @@ web = Flask(__name__)
 
 @web.route('/')
 def root():
-    return redirect(settings["root-page-redirect"], code=302)
+    return redirect("https://github.com/thomaskeig/thekla-api", code=302)
 
 
 @web.route('/remainingTickets', methods=['GET'])
@@ -51,5 +51,3 @@ async def remainingTickets():
     json_str = {"event": event.replace('-bristol-tickets', ''), "date": date, "sold_out": (tickets_available==0), "tickets_remaining": tickets_available, "exact_amount_unknown": (tickets_available==10)}
 
     return json_str, 200
-
-# web.run(port=int(settings['port']), host="0.0.0.0")
