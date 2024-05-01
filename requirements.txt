@@ -1,4 +1,4 @@
-sanic
+flask
 bs4
 requests
 pyyaml

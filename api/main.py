@@ -1,8 +1,8 @@
-from sanic import Sanic, redirect, request
+from flask import Flask, request, redirect
 from bs4 import BeautifulSoup
 import requests
 
-app = Sanic()
+app = Flask(__name__)
 
 @app.route('/')
 def root():
@@ -10,7 +10,7 @@ def root():
 
 
 @app.route('/remainingTickets', methods=['GET'])
-async def remainingTickets():
+def remainingTickets():
     event_index = request.args.get('event_index', default='0')
     date = request.args.get('date', default='2024-05-04')
 
