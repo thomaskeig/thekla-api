@@ -1,10 +1,9 @@
 # thekla-api
 A selfhostable API to show how many tickets are remaining for Thekla Thursday & Saturday club nights.
+You can also access this API using the root domain thekla.thomaskeig.com
 ## Setup:
-- Clone the repository.
-- Install the requirements with `python -m pip install -r requirements.txt`
-- Edit the settings.yml file to change your server port and more.
-- Run the main.py file on your webserver.
+- Create a Vercel project with [this](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fthomaskeig%2Fthekla-api&showOptionalTeamCreation=false) link.
+- Deploy your project through Vercel.
 
 ## Endpoint:
 [GET] /remainingTickets
