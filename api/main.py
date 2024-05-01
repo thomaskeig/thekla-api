@@ -2,9 +2,10 @@ from flask import Flask, request, redirect
 from bs4 import BeautifulSoup
 import requests
 import yaml
+import os
 
 
-with open('settings.yml', encoding="utf8") as file:
+with open(os.path.dirname(__file__) + '../settings.yml', encoding="utf8") as file:
     settings = yaml.load(file, Loader=yaml.FullLoader)
 
 
