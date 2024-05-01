@@ -52,4 +52,4 @@ async def remainingTickets():
 
     return json_str, 200
 
-web.run(port=int(settings['port']), host="0.0.0.0")
+# web.run(port=int(settings['port']), host="0.0.0.0")
