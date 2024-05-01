@@ -1,10 +1,8 @@
-from flask import Flask, request, redirect
+from sanic import Sanic, redirect, request
 from bs4 import BeautifulSoup
 import requests
-import yaml
-import os
 
-app = Flask(__name__)
+app = Sanic()
 
 @app.route('/')
 def root():
