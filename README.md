@@ -1,6 +1,9 @@
 # thekla-api
 A selfhostable API to show how many tickets are remaining for Thekla Thursday & Saturday club nights.
 You can also access this API using the root domain thekla.thomaskeig.com
+
+**UPDATE:** Due to Thekla moving their ticket sales to Fatsoma, this API no longer works, as it queries AltTickets.
+
 ## Setup:
 - Create a Vercel project with [this](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fthomaskeig%2Fthekla-api&showOptionalTeamCreation=false) link.
 - Deploy your project through Vercel.
